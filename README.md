@@ -28,3 +28,6 @@ $ wget https://www.africau.edu/images/default/sample.pdf
 $ wget https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
 $ docker run -u=$UID:$UID -v $(pwd):/data sebelino/pdf-revise-bulk-blacken:latest "file"
 ```
+
+![sample.out.pdf](https://user-images.githubusercontent.com/837775/222696475-ecdf684b-8704-4f9f-aa7c-8f2ff280dab1.png)
+![dummy.out.pdf](https://user-images.githubusercontent.com/837775/222696530-bbce01ee-8073-4945-91e6-eb09eba5f642.png)
