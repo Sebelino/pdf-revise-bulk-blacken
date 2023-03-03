@@ -12,7 +12,7 @@ Run the following command to blacken the string `<STRING_TO_BLACKEN>` in each
 PDF file in the current directory:
 
 ```bash
-$ docker run -u=$UID:$UID -v $(pwd):/data sebelino/pdf-revise:latest "<STRING_TO_BLACKEN>"
+$ docker run -u=$UID:$UID -v $(pwd):/data sebelino/pdf-revise-bulk-blacken:latest "<STRING_TO_BLACKEN>"
 ```
 
 The processed PDF files will have the file extension `*.out.pdf`.
@@ -26,5 +26,5 @@ the current directory, those will be removed.
 $ mkdir pdfs/ && cd pdfs/
 $ wget https://www.africau.edu/images/default/sample.pdf
 $ wget https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
-$ docker run -u=$UID:$UID -v $(pwd):/data sebelino/pdf-revise:latest "file"
+$ docker run -u=$UID:$UID -v $(pwd):/data sebelino/pdf-revise-bulk-blacken:latest "file"
 ```
